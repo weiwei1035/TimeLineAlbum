@@ -105,7 +105,7 @@ static NSString * const reuseIdentifier = @"Cell";
         AlbumCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
         cell.imageName = _imageArray[indexPath.section][indexPath.row];
         // Configure the cell
-        cell.backgroundColor = [UIColor cyanColor];
+        cell.backgroundColor = [UIColor clearColor];
         return cell;
     }
     

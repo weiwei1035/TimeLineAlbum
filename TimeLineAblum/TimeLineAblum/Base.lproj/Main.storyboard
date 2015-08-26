@@ -15,12 +15,79 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="gDJ-T0-V2C" kind="relationship" relationship="rootViewController" id="xHx-4H-l1l"/>
+                        <segue destination="skX-g9-V0w" kind="relationship" relationship="rootViewController" id="G7p-JU-Jk3"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lfg-D1-epf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="251"/>
+            <point key="canvasLocation" x="-154" y="251"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GE4-A4-frt">
+            <objects>
+                <viewController id="skX-g9-V0w" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pE1-6Y-00i"/>
+                        <viewControllerLayoutGuide type="bottom" id="b6G-V1-UMt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="59b-GH-ICC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yz-HF-J5R">
+                                <rect key="frame" x="234" y="140" width="133" height="74"/>
+                                <color key="backgroundColor" red="0.30196078430000001" green="0.71764705880000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="3FO-rX-mAX"/>
+                                    <constraint firstAttribute="width" constant="133" id="3FZ-m5-7P4"/>
+                                </constraints>
+                                <state key="normal" title="相册">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gDJ-T0-V2C" kind="show" id="LoC-Gg-ADm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rH-Bb-uMk">
+                                <rect key="frame" x="251" y="262" width="99" height="75"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.74509803919999995" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="hB4-1c-z4h"/>
+                                    <constraint firstAttribute="height" constant="75" id="sf5-wd-uAS"/>
+                                </constraints>
+                                <state key="normal" title="微博">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Udw-Be-gKA" kind="show" id="UFB-mj-leK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7V-id-wwo">
+                                <rect key="frame" x="264" y="476" width="73" height="50"/>
+                                <state key="normal" title="登陆">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3yz-HF-J5R" firstAttribute="top" secondItem="pE1-6Y-00i" secondAttribute="bottom" constant="76" id="0Js-oi-aqg"/>
+                            <constraint firstAttribute="centerX" secondItem="1rH-Bb-uMk" secondAttribute="centerX" constant="-0.5" id="7c5-E5-iob"/>
+                            <constraint firstAttribute="width" secondItem="3yz-HF-J5R" secondAttribute="width" id="BV4-xX-Qkv"/>
+                            <constraint firstAttribute="centerX" secondItem="3yz-HF-J5R" secondAttribute="centerX" constant="-0.5" id="fdC-vh-1Fy"/>
+                            <constraint firstItem="1rH-Bb-uMk" firstAttribute="top" secondItem="3yz-HF-J5R" secondAttribute="bottom" constant="48" id="uXL-aY-mpg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BV4-xX-Qkv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="iN1-4c-io6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PQe-2C-VhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="488" y="251"/>
         </scene>
         <!--Main Collection View Controller-->
         <scene sceneID="9QJ-M5-oP7">
@@ -39,7 +106,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C2e-vd-d9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="251"/>
+            <point key="canvasLocation" x="1200" y="-121"/>
+        </scene>
+        <!--Weibo Table View Controller-->
+        <scene sceneID="t80-62-GhJ">
+            <objects>
+                <tableViewController id="Udw-Be-gKA" customClass="WeiboTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ybN-lK-ObW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hi3-cu-GF3">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hi3-cu-GF3" id="7Mh-8k-H3T">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Udw-Be-gKA" id="OJd-KV-DNL"/>
+                            <outlet property="delegate" destination="Udw-Be-gKA" id="WWj-hX-OD2"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W75-YJ-Iuf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1200" y="595"/>
         </scene>
     </scenes>
 </document>

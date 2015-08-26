@@ -30,6 +30,7 @@
 		EDAD87151B8C551400CB28C6 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAD87051B8C551400CB28C6 /* UIImageView+HighlightedWebCache.m */; };
 		EDAD87161B8C551400CB28C6 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAD87071B8C551400CB28C6 /* UIImageView+WebCache.m */; };
 		EDAD87171B8C551400CB28C6 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAD87091B8C551400CB28C6 /* UIView+WebCacheOperation.m */; };
+		EDED0DFF1B8DAC9E00FE5334 /* WeiboTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDED0DFE1B8DAC9E00FE5334 /* WeiboTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		EDAD87071B8C551400CB28C6 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		EDAD87081B8C551400CB28C6 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		EDAD87091B8C551400CB28C6 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		EDED0DFD1B8DAC9E00FE5334 /* WeiboTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboTableViewController.h; sourceTree = "<group>"; };
+		EDED0DFE1B8DAC9E00FE5334 /* WeiboTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				EDAD86E71B8C468000CB28C6 /* TimeLineCollectionViewCell.m */,
 				EDAD86E91B8C549400CB28C6 /* AlbumCollectionViewCell.h */,
 				EDAD86EA1B8C549400CB28C6 /* AlbumCollectionViewCell.m */,
+				EDED0DFD1B8DAC9E00FE5334 /* WeiboTableViewController.h */,
+				EDED0DFE1B8DAC9E00FE5334 /* WeiboTableViewController.m */,
 				EDAD86C71B8C332100CB28C6 /* Main.storyboard */,
 				EDAD86CA1B8C332100CB28C6 /* Images.xcassets */,
 				EDAD86CC1B8C332100CB28C6 /* LaunchScreen.xib */,
@@ -319,6 +324,7 @@
 				EDAD87111B8C551400CB28C6 /* SDWebImagePrefetcher.m in Sources */,
 				EDAD86EB1B8C549400CB28C6 /* AlbumCollectionViewCell.m in Sources */,
 				EDAD86E81B8C468000CB28C6 /* TimeLineCollectionViewCell.m in Sources */,
+				EDED0DFF1B8DAC9E00FE5334 /* WeiboTableViewController.m in Sources */,
 				EDAD870E1B8C551400CB28C6 /* SDWebImageDownloader.m in Sources */,
 				EDAD87121B8C551400CB28C6 /* UIButton+WebCache.m in Sources */,
 				EDAD86C31B8C332100CB28C6 /* AppDelegate.m in Sources */,
@@ -526,6 +532,7 @@
 				EDAD86DF1B8C332100CB28C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDAD86E01B8C332100CB28C6 /* Build configuration list for PBXNativeTarget "TimeLineAblumTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +541,7 @@
 				EDAD86E21B8C332100CB28C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
